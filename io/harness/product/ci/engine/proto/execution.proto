@@ -5,12 +5,12 @@
 
 syntax = "proto3";
 
-package proto;
+package io.harness.product.ci.engine.proto;
 
 option java_multiple_files = true;
 option go_package = "github.com/vcalasansh/k8s-engine-commons/proto;proto";
 
-import "proto/publish_artifact.proto";
+import "io/harness/product/ci/engine/proto/publish_artifact.proto";
 
 enum ShellType {
   SH = 0;

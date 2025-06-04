@@ -7,7 +7,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: proto/execution.proto
+// source: io/harness/product/ci/engine/proto/execution.proto
 
 package proto
 
@@ -68,11 +68,11 @@ func (x ShellType) String() string {
 }
 
 func (ShellType) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_execution_proto_enumTypes[0].Descriptor()
+	return file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[0].Descriptor()
 }
 
 func (ShellType) Type() protoreflect.EnumType {
-	return &file_proto_execution_proto_enumTypes[0]
+	return &file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[0]
 }
 
 func (x ShellType) Number() protoreflect.EnumNumber {
@@ -81,7 +81,7 @@ func (x ShellType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use ShellType.Descriptor instead.
 func (ShellType) EnumDescriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{0}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{0}
 }
 
 type Report_Type int32
@@ -114,11 +114,11 @@ func (x Report_Type) String() string {
 }
 
 func (Report_Type) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_execution_proto_enumTypes[1].Descriptor()
+	return file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[1].Descriptor()
 }
 
 func (Report_Type) Type() protoreflect.EnumType {
-	return &file_proto_execution_proto_enumTypes[1]
+	return &file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[1]
 }
 
 func (x Report_Type) Number() protoreflect.EnumNumber {
@@ -127,7 +127,7 @@ func (x Report_Type) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Report_Type.Descriptor instead.
 func (Report_Type) EnumDescriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{2, 0}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{2, 0}
 }
 
 type OutputVariable_OutputType int32
@@ -160,11 +160,11 @@ func (x OutputVariable_OutputType) String() string {
 }
 
 func (OutputVariable_OutputType) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_execution_proto_enumTypes[2].Descriptor()
+	return file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[2].Descriptor()
 }
 
 func (OutputVariable_OutputType) Type() protoreflect.EnumType {
-	return &file_proto_execution_proto_enumTypes[2]
+	return &file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[2]
 }
 
 func (x OutputVariable_OutputType) Number() protoreflect.EnumNumber {
@@ -173,7 +173,7 @@ func (x OutputVariable_OutputType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use OutputVariable_OutputType.Descriptor instead.
 func (OutputVariable_OutputType) EnumDescriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{5, 0}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{5, 0}
 }
 
 type UpdateStateRequest_Action int32
@@ -209,11 +209,11 @@ func (x UpdateStateRequest_Action) String() string {
 }
 
 func (UpdateStateRequest_Action) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_execution_proto_enumTypes[3].Descriptor()
+	return file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[3].Descriptor()
 }
 
 func (UpdateStateRequest_Action) Type() protoreflect.EnumType {
-	return &file_proto_execution_proto_enumTypes[3]
+	return &file_io_harness_product_ci_engine_proto_execution_proto_enumTypes[3]
 }
 
 func (x UpdateStateRequest_Action) Number() protoreflect.EnumNumber {
@@ -222,7 +222,7 @@ func (x UpdateStateRequest_Action) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use UpdateStateRequest_Action.Descriptor instead.
 func (UpdateStateRequest_Action) EnumDescriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{15, 0}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{15, 0}
 }
 
 type StepContext struct {
@@ -235,7 +235,7 @@ type StepContext struct {
 
 func (x *StepContext) Reset() {
 	*x = StepContext{}
-	mi := &file_proto_execution_proto_msgTypes[0]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -247,7 +247,7 @@ func (x *StepContext) String() string {
 func (*StepContext) ProtoMessage() {}
 
 func (x *StepContext) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[0]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -260,7 +260,7 @@ func (x *StepContext) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StepContext.ProtoReflect.Descriptor instead.
 func (*StepContext) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{0}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *StepContext) GetNumRetries() int32 {
@@ -287,7 +287,7 @@ type PublishArtifactsStep struct {
 
 func (x *PublishArtifactsStep) Reset() {
 	*x = PublishArtifactsStep{}
-	mi := &file_proto_execution_proto_msgTypes[1]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -299,7 +299,7 @@ func (x *PublishArtifactsStep) String() string {
 func (*PublishArtifactsStep) ProtoMessage() {}
 
 func (x *PublishArtifactsStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[1]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -312,7 +312,7 @@ func (x *PublishArtifactsStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PublishArtifactsStep.ProtoReflect.Descriptor instead.
 func (*PublishArtifactsStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{1}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *PublishArtifactsStep) GetFiles() []*UploadFile {
@@ -331,7 +331,7 @@ func (x *PublishArtifactsStep) GetImages() []*BuildPublishImage {
 
 type Report struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	Type  Report_Type            `protobuf:"varint,2,opt,name=type,proto3,enum=proto.Report_Type" json:"type,omitempty"`
+	Type  Report_Type            `protobuf:"varint,2,opt,name=type,proto3,enum=io.harness.product.ci.engine.proto.Report_Type" json:"type,omitempty"`
 	// List of paths to collect reports from. Can be regex as well.
 	Paths         []string `protobuf:"bytes,3,rep,name=paths,proto3" json:"paths,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -340,7 +340,7 @@ type Report struct {
 
 func (x *Report) Reset() {
 	*x = Report{}
-	mi := &file_proto_execution_proto_msgTypes[2]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -352,7 +352,7 @@ func (x *Report) String() string {
 func (*Report) ProtoMessage() {}
 
 func (x *Report) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[2]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -365,7 +365,7 @@ func (x *Report) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Report.ProtoReflect.Descriptor instead.
 func (*Report) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{2}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Report) GetType() Report_Type {
@@ -415,7 +415,7 @@ type RunTestsStep struct {
 
 func (x *RunTestsStep) Reset() {
 	*x = RunTestsStep{}
-	mi := &file_proto_execution_proto_msgTypes[3]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -427,7 +427,7 @@ func (x *RunTestsStep) String() string {
 func (*RunTestsStep) ProtoMessage() {}
 
 func (x *RunTestsStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[3]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -440,7 +440,7 @@ func (x *RunTestsStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RunTestsStep.ProtoReflect.Descriptor instead.
 func (*RunTestsStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{3}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *RunTestsStep) GetArgs() string {
@@ -619,7 +619,7 @@ type RunStep struct {
 	ContainerPort        uint32                 `protobuf:"varint,4,opt,name=container_port,json=containerPort,proto3" json:"container_port,omitempty"`  // Deprecated. Port of the container on which run step needs to be executed
 	Reports              []*Report              `protobuf:"bytes,5,rep,name=reports,proto3" json:"reports,omitempty"`
 	Environment          map[string]string      `protobuf:"bytes,6,rep,name=environment,proto3" json:"environment,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
-	ShellType            ShellType              `protobuf:"varint,7,opt,name=shell_type,json=shellType,proto3,enum=proto.ShellType" json:"shell_type,omitempty"`
+	ShellType            ShellType              `protobuf:"varint,7,opt,name=shell_type,json=shellType,proto3,enum=io.harness.product.ci.engine.proto.ShellType" json:"shell_type,omitempty"`
 	Detach               bool                   `protobuf:"varint,8,opt,name=detach,proto3" json:"detach,omitempty"`
 	Entrypoint           []string               `protobuf:"bytes,9,rep,name=entrypoint,proto3" json:"entrypoint,omitempty"`
 	Image                string                 `protobuf:"bytes,10,opt,name=image,proto3" json:"image,omitempty"`
@@ -632,7 +632,7 @@ type RunStep struct {
 
 func (x *RunStep) Reset() {
 	*x = RunStep{}
-	mi := &file_proto_execution_proto_msgTypes[4]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -644,7 +644,7 @@ func (x *RunStep) String() string {
 func (*RunStep) ProtoMessage() {}
 
 func (x *RunStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[4]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -657,7 +657,7 @@ func (x *RunStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RunStep.ProtoReflect.Descriptor instead.
 func (*RunStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{4}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *RunStep) GetCommand() string {
@@ -753,7 +753,7 @@ func (x *RunStep) GetScriptSecretsRuntime() bool {
 
 type OutputVariable struct {
 	state         protoimpl.MessageState    `protogen:"open.v1"`
-	Type          OutputVariable_OutputType `protobuf:"varint,2,opt,name=type,proto3,enum=proto.OutputVariable_OutputType" json:"type,omitempty"`
+	Type          OutputVariable_OutputType `protobuf:"varint,2,opt,name=type,proto3,enum=io.harness.product.ci.engine.proto.OutputVariable_OutputType" json:"type,omitempty"`
 	Key           string                    `protobuf:"bytes,3,opt,name=key,proto3" json:"key,omitempty"`
 	Value         string                    `protobuf:"bytes,4,opt,name=value,proto3" json:"value,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -762,7 +762,7 @@ type OutputVariable struct {
 
 func (x *OutputVariable) Reset() {
 	*x = OutputVariable{}
-	mi := &file_proto_execution_proto_msgTypes[5]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -774,7 +774,7 @@ func (x *OutputVariable) String() string {
 func (*OutputVariable) ProtoMessage() {}
 
 func (x *OutputVariable) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[5]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -787,7 +787,7 @@ func (x *OutputVariable) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use OutputVariable.ProtoReflect.Descriptor instead.
 func (*OutputVariable) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{5}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *OutputVariable) GetType() OutputVariable_OutputType {
@@ -819,7 +819,7 @@ type RunTestStepV2 struct {
 	ContainerPort    uint32                 `protobuf:"varint,4,opt,name=container_port,json=containerPort,proto3" json:"container_port,omitempty"`
 	Reports          []*Report              `protobuf:"bytes,5,rep,name=reports,proto3" json:"reports,omitempty"`
 	Environment      map[string]string      `protobuf:"bytes,6,rep,name=environment,proto3" json:"environment,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
-	ShellType        ShellType              `protobuf:"varint,7,opt,name=shell_type,json=shellType,proto3,enum=proto.ShellType" json:"shell_type,omitempty"`
+	ShellType        ShellType              `protobuf:"varint,7,opt,name=shell_type,json=shellType,proto3,enum=io.harness.product.ci.engine.proto.ShellType" json:"shell_type,omitempty"`
 	Entrypoint       []string               `protobuf:"bytes,8,rep,name=entrypoint,proto3" json:"entrypoint,omitempty"`
 	Image            string                 `protobuf:"bytes,9,opt,name=image,proto3" json:"image,omitempty"`
 	Outputs          []*OutputVariable      `protobuf:"bytes,10,rep,name=outputs,proto3" json:"outputs,omitempty"`
@@ -833,7 +833,7 @@ type RunTestStepV2 struct {
 
 func (x *RunTestStepV2) Reset() {
 	*x = RunTestStepV2{}
-	mi := &file_proto_execution_proto_msgTypes[6]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -845,7 +845,7 @@ func (x *RunTestStepV2) String() string {
 func (*RunTestStepV2) ProtoMessage() {}
 
 func (x *RunTestStepV2) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[6]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -858,7 +858,7 @@ func (x *RunTestStepV2) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RunTestStepV2.ProtoReflect.Descriptor instead.
 func (*RunTestStepV2) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{6}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *RunTestStepV2) GetCommand() string {
@@ -978,7 +978,7 @@ type PluginStep struct {
 
 func (x *PluginStep) Reset() {
 	*x = PluginStep{}
-	mi := &file_proto_execution_proto_msgTypes[7]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -990,7 +990,7 @@ func (x *PluginStep) String() string {
 func (*PluginStep) ProtoMessage() {}
 
 func (x *PluginStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[7]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1003,7 +1003,7 @@ func (x *PluginStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginStep.ProtoReflect.Descriptor instead.
 func (*PluginStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{7}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *PluginStep) GetImage() string {
@@ -1079,7 +1079,7 @@ type SaveCacheStep struct {
 
 func (x *SaveCacheStep) Reset() {
 	*x = SaveCacheStep{}
-	mi := &file_proto_execution_proto_msgTypes[8]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1091,7 +1091,7 @@ func (x *SaveCacheStep) String() string {
 func (*SaveCacheStep) ProtoMessage() {}
 
 func (x *SaveCacheStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[8]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1104,7 +1104,7 @@ func (x *SaveCacheStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SaveCacheStep.ProtoReflect.Descriptor instead.
 func (*SaveCacheStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{8}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *SaveCacheStep) GetKey() string {
@@ -1131,7 +1131,7 @@ type RestoreCacheStep struct {
 
 func (x *RestoreCacheStep) Reset() {
 	*x = RestoreCacheStep{}
-	mi := &file_proto_execution_proto_msgTypes[9]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1143,7 +1143,7 @@ func (x *RestoreCacheStep) String() string {
 func (*RestoreCacheStep) ProtoMessage() {}
 
 func (x *RestoreCacheStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[9]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1156,7 +1156,7 @@ func (x *RestoreCacheStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RestoreCacheStep.ProtoReflect.Descriptor instead.
 func (*RestoreCacheStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{9}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *RestoreCacheStep) GetKey() string {
@@ -1177,7 +1177,7 @@ type ExecuteStep struct {
 	state          protoimpl.MessageState `protogen:"open.v1"`
 	TaskParameters []byte                 `protobuf:"bytes,1,opt,name=task_parameters,json=taskParameters,proto3" json:"task_parameters,omitempty"`
 	ExecuteCommand string                 `protobuf:"bytes,2,opt,name=execute_command,json=executeCommand,proto3" json:"execute_command,omitempty"`
-	ShellType      ShellType              `protobuf:"varint,3,opt,name=shell_type,json=shellType,proto3,enum=proto.ShellType" json:"shell_type,omitempty"`
+	ShellType      ShellType              `protobuf:"varint,3,opt,name=shell_type,json=shellType,proto3,enum=io.harness.product.ci.engine.proto.ShellType" json:"shell_type,omitempty"`
 	EnvVarOutputs  []string               `protobuf:"bytes,4,rep,name=env_var_outputs,json=envVarOutputs,proto3" json:"env_var_outputs,omitempty"` // output variables to export as step outcome
 	unknownFields  protoimpl.UnknownFields
 	sizeCache      protoimpl.SizeCache
@@ -1185,7 +1185,7 @@ type ExecuteStep struct {
 
 func (x *ExecuteStep) Reset() {
 	*x = ExecuteStep{}
-	mi := &file_proto_execution_proto_msgTypes[10]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1197,7 +1197,7 @@ func (x *ExecuteStep) String() string {
 func (*ExecuteStep) ProtoMessage() {}
 
 func (x *ExecuteStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[10]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1210,7 +1210,7 @@ func (x *ExecuteStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExecuteStep.ProtoReflect.Descriptor instead.
 func (*ExecuteStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{10}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *ExecuteStep) GetTaskParameters() []byte {
@@ -1270,7 +1270,7 @@ type UnitStep struct {
 
 func (x *UnitStep) Reset() {
 	*x = UnitStep{}
-	mi := &file_proto_execution_proto_msgTypes[11]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1282,7 +1282,7 @@ func (x *UnitStep) String() string {
 func (*UnitStep) ProtoMessage() {}
 
 func (x *UnitStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[11]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1295,7 +1295,7 @@ func (x *UnitStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnitStep.ProtoReflect.Descriptor instead.
 func (*UnitStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{11}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *UnitStep) GetId() string {
@@ -1510,7 +1510,7 @@ type ParallelStep struct {
 
 func (x *ParallelStep) Reset() {
 	*x = ParallelStep{}
-	mi := &file_proto_execution_proto_msgTypes[12]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1522,7 +1522,7 @@ func (x *ParallelStep) String() string {
 func (*ParallelStep) ProtoMessage() {}
 
 func (x *ParallelStep) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[12]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1535,7 +1535,7 @@ func (x *ParallelStep) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParallelStep.ProtoReflect.Descriptor instead.
 func (*ParallelStep) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{12}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *ParallelStep) GetId() string {
@@ -1572,7 +1572,7 @@ type Step struct {
 
 func (x *Step) Reset() {
 	*x = Step{}
-	mi := &file_proto_execution_proto_msgTypes[13]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1584,7 +1584,7 @@ func (x *Step) String() string {
 func (*Step) ProtoMessage() {}
 
 func (x *Step) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[13]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1597,7 +1597,7 @@ func (x *Step) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Step.ProtoReflect.Descriptor instead.
 func (*Step) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{13}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *Step) GetStep() isStep_Step {
@@ -1651,7 +1651,7 @@ type Execution struct {
 
 func (x *Execution) Reset() {
 	*x = Execution{}
-	mi := &file_proto_execution_proto_msgTypes[14]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1663,7 +1663,7 @@ func (x *Execution) String() string {
 func (*Execution) ProtoMessage() {}
 
 func (x *Execution) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[14]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1676,7 +1676,7 @@ func (x *Execution) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Execution.ProtoReflect.Descriptor instead.
 func (*Execution) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{14}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *Execution) GetSteps() []*Step {
@@ -1695,14 +1695,14 @@ func (x *Execution) GetAccountId() string {
 
 type UpdateStateRequest struct {
 	state         protoimpl.MessageState    `protogen:"open.v1"`
-	Action        UpdateStateRequest_Action `protobuf:"varint,1,opt,name=action,proto3,enum=proto.UpdateStateRequest_Action" json:"action,omitempty"`
+	Action        UpdateStateRequest_Action `protobuf:"varint,1,opt,name=action,proto3,enum=io.harness.product.ci.engine.proto.UpdateStateRequest_Action" json:"action,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *UpdateStateRequest) Reset() {
 	*x = UpdateStateRequest{}
-	mi := &file_proto_execution_proto_msgTypes[15]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1714,7 +1714,7 @@ func (x *UpdateStateRequest) String() string {
 func (*UpdateStateRequest) ProtoMessage() {}
 
 func (x *UpdateStateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[15]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1727,7 +1727,7 @@ func (x *UpdateStateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateStateRequest.ProtoReflect.Descriptor instead.
 func (*UpdateStateRequest) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{15}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *UpdateStateRequest) GetAction() UpdateStateRequest_Action {
@@ -1745,7 +1745,7 @@ type UpdateStateResponse struct {
 
 func (x *UpdateStateResponse) Reset() {
 	*x = UpdateStateResponse{}
-	mi := &file_proto_execution_proto_msgTypes[16]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1757,7 +1757,7 @@ func (x *UpdateStateResponse) String() string {
 func (*UpdateStateResponse) ProtoMessage() {}
 
 func (x *UpdateStateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[16]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1770,7 +1770,7 @@ func (x *UpdateStateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateStateResponse.ProtoReflect.Descriptor instead.
 func (*UpdateStateResponse) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{16}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{16}
 }
 
 type GetImageEntrypointRequest struct {
@@ -1784,7 +1784,7 @@ type GetImageEntrypointRequest struct {
 
 func (x *GetImageEntrypointRequest) Reset() {
 	*x = GetImageEntrypointRequest{}
-	mi := &file_proto_execution_proto_msgTypes[17]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1796,7 +1796,7 @@ func (x *GetImageEntrypointRequest) String() string {
 func (*GetImageEntrypointRequest) ProtoMessage() {}
 
 func (x *GetImageEntrypointRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[17]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1809,7 +1809,7 @@ func (x *GetImageEntrypointRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetImageEntrypointRequest.ProtoReflect.Descriptor instead.
 func (*GetImageEntrypointRequest) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{17}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *GetImageEntrypointRequest) GetId() string {
@@ -1843,7 +1843,7 @@ type GetImageEntrypointResponse struct {
 
 func (x *GetImageEntrypointResponse) Reset() {
 	*x = GetImageEntrypointResponse{}
-	mi := &file_proto_execution_proto_msgTypes[18]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1855,7 +1855,7 @@ func (x *GetImageEntrypointResponse) String() string {
 func (*GetImageEntrypointResponse) ProtoMessage() {}
 
 func (x *GetImageEntrypointResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[18]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1868,7 +1868,7 @@ func (x *GetImageEntrypointResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetImageEntrypointResponse.ProtoReflect.Descriptor instead.
 func (*GetImageEntrypointResponse) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{18}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *GetImageEntrypointResponse) GetEntrypoint() []string {
@@ -1894,7 +1894,7 @@ type StepOutput struct {
 
 func (x *StepOutput) Reset() {
 	*x = StepOutput{}
-	mi := &file_proto_execution_proto_msgTypes[19]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1906,7 +1906,7 @@ func (x *StepOutput) String() string {
 func (*StepOutput) ProtoMessage() {}
 
 func (x *StepOutput) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[19]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1919,7 +1919,7 @@ func (x *StepOutput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StepOutput.ProtoReflect.Descriptor instead.
 func (*StepOutput) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{19}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *StepOutput) GetOutput() map[string]string {
@@ -1940,7 +1940,7 @@ type EvaluateJEXLRequest struct {
 
 func (x *EvaluateJEXLRequest) Reset() {
 	*x = EvaluateJEXLRequest{}
-	mi := &file_proto_execution_proto_msgTypes[20]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1952,7 +1952,7 @@ func (x *EvaluateJEXLRequest) String() string {
 func (*EvaluateJEXLRequest) ProtoMessage() {}
 
 func (x *EvaluateJEXLRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[20]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1965,7 +1965,7 @@ func (x *EvaluateJEXLRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EvaluateJEXLRequest.ProtoReflect.Descriptor instead.
 func (*EvaluateJEXLRequest) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{20}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *EvaluateJEXLRequest) GetStepId() string {
@@ -1998,7 +1998,7 @@ type EvaluateJEXLResponse struct {
 
 func (x *EvaluateJEXLResponse) Reset() {
 	*x = EvaluateJEXLResponse{}
-	mi := &file_proto_execution_proto_msgTypes[21]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2010,7 +2010,7 @@ func (x *EvaluateJEXLResponse) String() string {
 func (*EvaluateJEXLResponse) ProtoMessage() {}
 
 func (x *EvaluateJEXLResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[21]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2023,7 +2023,7 @@ func (x *EvaluateJEXLResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EvaluateJEXLResponse.ProtoReflect.Descriptor instead.
 func (*EvaluateJEXLResponse) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{21}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *EvaluateJEXLResponse) GetEvaluatedExpressions() map[string]string {
@@ -2041,7 +2041,7 @@ type PingRequest struct {
 
 func (x *PingRequest) Reset() {
 	*x = PingRequest{}
-	mi := &file_proto_execution_proto_msgTypes[22]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2053,7 +2053,7 @@ func (x *PingRequest) String() string {
 func (*PingRequest) ProtoMessage() {}
 
 func (x *PingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[22]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2066,7 +2066,7 @@ func (x *PingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PingRequest.ProtoReflect.Descriptor instead.
 func (*PingRequest) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{22}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{22}
 }
 
 type PingResponse struct {
@@ -2077,7 +2077,7 @@ type PingResponse struct {
 
 func (x *PingResponse) Reset() {
 	*x = PingResponse{}
-	mi := &file_proto_execution_proto_msgTypes[23]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2089,7 +2089,7 @@ func (x *PingResponse) String() string {
 func (*PingResponse) ProtoMessage() {}
 
 func (x *PingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[23]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2102,7 +2102,7 @@ func (x *PingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PingResponse.ProtoReflect.Descriptor instead.
 func (*PingResponse) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{23}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{23}
 }
 
 type ExecuteStepRequest struct {
@@ -2122,7 +2122,7 @@ type ExecuteStepRequest struct {
 
 func (x *ExecuteStepRequest) Reset() {
 	*x = ExecuteStepRequest{}
-	mi := &file_proto_execution_proto_msgTypes[24]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2134,7 +2134,7 @@ func (x *ExecuteStepRequest) String() string {
 func (*ExecuteStepRequest) ProtoMessage() {}
 
 func (x *ExecuteStepRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[24]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2147,7 +2147,7 @@ func (x *ExecuteStepRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExecuteStepRequest.ProtoReflect.Descriptor instead.
 func (*ExecuteStepRequest) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{24}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *ExecuteStepRequest) GetExecutionId() string {
@@ -2221,7 +2221,7 @@ type ExecuteStepResponse struct {
 
 func (x *ExecuteStepResponse) Reset() {
 	*x = ExecuteStepResponse{}
-	mi := &file_proto_execution_proto_msgTypes[25]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2233,7 +2233,7 @@ func (x *ExecuteStepResponse) String() string {
 func (*ExecuteStepResponse) ProtoMessage() {}
 
 func (x *ExecuteStepResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[25]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2246,7 +2246,7 @@ func (x *ExecuteStepResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExecuteStepResponse.ProtoReflect.Descriptor instead.
 func (*ExecuteStepResponse) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{25}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{25}
 }
 
 type OutputVariablesWrapper struct {
@@ -2258,7 +2258,7 @@ type OutputVariablesWrapper struct {
 
 func (x *OutputVariablesWrapper) Reset() {
 	*x = OutputVariablesWrapper{}
-	mi := &file_proto_execution_proto_msgTypes[26]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2270,7 +2270,7 @@ func (x *OutputVariablesWrapper) String() string {
 func (*OutputVariablesWrapper) ProtoMessage() {}
 
 func (x *OutputVariablesWrapper) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_execution_proto_msgTypes[26]
+	mi := &file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2283,7 +2283,7 @@ func (x *OutputVariablesWrapper) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use OutputVariablesWrapper.ProtoReflect.Descriptor instead.
 func (*OutputVariablesWrapper) Descriptor() ([]byte, []int) {
-	return file_proto_execution_proto_rawDescGZIP(), []int{26}
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *OutputVariablesWrapper) GetOutputVariables() []*OutputVariable {
@@ -2293,41 +2293,41 @@ func (x *OutputVariablesWrapper) GetOutputVariables() []*OutputVariable {
 	return nil
 }
 
-var File_proto_execution_proto protoreflect.FileDescriptor
+var File_io_harness_product_ci_engine_proto_execution_proto protoreflect.FileDescriptor
 
-const file_proto_execution_proto_rawDesc = "" +
+const file_io_harness_product_ci_engine_proto_execution_proto_rawDesc = "" +
 	"\n" +
-	"\x15proto/execution.proto\x12\x05proto\x1a\x1cproto/publish_artifact.proto\"d\n" +
+	"2io/harness/product/ci/engine/proto/execution.proto\x12\"io.harness.product.ci.engine.proto\x1a9io/harness/product/ci/engine/proto/publish_artifact.proto\"d\n" +
 	"\vStepContext\x12\x1f\n" +
 	"\vnum_retries\x18\x01 \x01(\x05R\n" +
 	"numRetries\x124\n" +
-	"\x16execution_timeout_secs\x18\x02 \x01(\x03R\x14executionTimeoutSecs\"q\n" +
-	"\x14PublishArtifactsStep\x12'\n" +
-	"\x05files\x18\x01 \x03(\v2\x11.proto.UploadFileR\x05files\x120\n" +
-	"\x06images\x18\x02 \x03(\v2\x18.proto.BuildPublishImageR\x06images\"f\n" +
-	"\x06Report\x12&\n" +
-	"\x04type\x18\x02 \x01(\x0e2\x12.proto.Report.TypeR\x04type\x12\x14\n" +
+	"\x16execution_timeout_secs\x18\x02 \x01(\x03R\x14executionTimeoutSecs\"\xab\x01\n" +
+	"\x14PublishArtifactsStep\x12D\n" +
+	"\x05files\x18\x01 \x03(\v2..io.harness.product.ci.engine.proto.UploadFileR\x05files\x12M\n" +
+	"\x06images\x18\x02 \x03(\v25.io.harness.product.ci.engine.proto.BuildPublishImageR\x06images\"\x83\x01\n" +
+	"\x06Report\x12C\n" +
+	"\x04type\x18\x02 \x01(\x0e2/.io.harness.product.ci.engine.proto.Report.TypeR\x04type\x12\x14\n" +
 	"\x05paths\x18\x03 \x03(\tR\x05paths\"\x1e\n" +
 	"\x04Type\x12\v\n" +
 	"\aUNKNOWN\x10\x00\x12\t\n" +
-	"\x05JUNIT\x10\x01\"\xff\a\n" +
+	"\x05JUNIT\x10\x01\"\xf3\b\n" +
 	"\fRunTestsStep\x12\x12\n" +
 	"\x04args\x18\x01 \x01(\tR\x04args\x12\x1a\n" +
 	"\blanguage\x18\x02 \x01(\tR\blanguage\x12\x1c\n" +
 	"\tbuildTool\x18\x03 \x01(\tR\tbuildTool\x12(\n" +
 	"\x0ftestAnnotations\x18\x04 \x01(\tR\x0ftestAnnotations\x12\x1a\n" +
 	"\bpackages\x18\x05 \x01(\tR\bpackages\x122\n" +
-	"\x14runOnlySelectedTests\x18\x06 \x01(\bR\x14runOnlySelectedTests\x12,\n" +
-	"\acontext\x18\a \x01(\v2\x12.proto.StepContextR\acontext\x12%\n" +
-	"\x0econtainer_port\x18\b \x01(\rR\rcontainerPort\x12'\n" +
-	"\areports\x18\t \x03(\v2\r.proto.ReportR\areports\x12&\n" +
+	"\x14runOnlySelectedTests\x18\x06 \x01(\bR\x14runOnlySelectedTests\x12I\n" +
+	"\acontext\x18\a \x01(\v2/.io.harness.product.ci.engine.proto.StepContextR\acontext\x12%\n" +
+	"\x0econtainer_port\x18\b \x01(\rR\rcontainerPort\x12D\n" +
+	"\areports\x18\t \x03(\v2*.io.harness.product.ci.engine.proto.ReportR\areports\x12&\n" +
 	"\x0epreTestCommand\x18\n" +
 	" \x01(\tR\x0epreTestCommand\x12(\n" +
 	"\x0fpostTestCommand\x18\v \x01(\tR\x0fpostTestCommand\x12$\n" +
 	"\renvVarOutputs\x18\f \x03(\tR\renvVarOutputs\x12\x1d\n" +
 	"\n" +
-	"diff_files\x18\r \x01(\tR\tdiffFiles\x12F\n" +
-	"\venvironment\x18\x0e \x03(\v2$.proto.RunTestsStep.EnvironmentEntryR\venvironment\x12*\n" +
+	"diff_files\x18\r \x01(\tR\tdiffFiles\x12c\n" +
+	"\venvironment\x18\x0e \x03(\v2A.io.harness.product.ci.engine.proto.RunTestsStep.EnvironmentEntryR\venvironment\x12*\n" +
 	"\x10buildEnvironment\x18\x0f \x01(\tR\x10buildEnvironment\x12*\n" +
 	"\x10frameworkVersion\x18\x10 \x01(\tR\x10frameworkVersion\x12\x1e\n" +
 	"\n" +
@@ -2338,35 +2338,35 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\n" +
 	"test_globs\x18\x14 \x01(\tR\ttestGlobs\x12$\n" +
 	"\rpythonVersion\x18\x15 \x01(\tR\rpythonVersion\x12\x1a\n" +
-	"\btestRoot\x18\x16 \x01(\tR\btestRoot\x12/\n" +
-	"\aoutputs\x18\x17 \x03(\v2\x15.proto.OutputVariableR\aoutputs\x12#\n" +
+	"\btestRoot\x18\x16 \x01(\tR\btestRoot\x12L\n" +
+	"\aoutputs\x18\x17 \x03(\v22.io.harness.product.ci.engine.proto.OutputVariableR\aoutputs\x12#\n" +
 	"\rparse_savings\x18\x18 \x01(\bR\fparseSavings\x1a>\n" +
 	"\x10EnvironmentEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
-	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xd7\x04\n" +
+	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xe8\x05\n" +
 	"\aRunStep\x12\x18\n" +
-	"\acommand\x18\x01 \x01(\tR\acommand\x12,\n" +
-	"\acontext\x18\x02 \x01(\v2\x12.proto.StepContextR\acontext\x12&\n" +
+	"\acommand\x18\x01 \x01(\tR\acommand\x12I\n" +
+	"\acontext\x18\x02 \x01(\v2/.io.harness.product.ci.engine.proto.StepContextR\acontext\x12&\n" +
 	"\x0fenv_var_outputs\x18\x03 \x03(\tR\renvVarOutputs\x12%\n" +
-	"\x0econtainer_port\x18\x04 \x01(\rR\rcontainerPort\x12'\n" +
-	"\areports\x18\x05 \x03(\v2\r.proto.ReportR\areports\x12A\n" +
-	"\venvironment\x18\x06 \x03(\v2\x1f.proto.RunStep.EnvironmentEntryR\venvironment\x12/\n" +
+	"\x0econtainer_port\x18\x04 \x01(\rR\rcontainerPort\x12D\n" +
+	"\areports\x18\x05 \x03(\v2*.io.harness.product.ci.engine.proto.ReportR\areports\x12^\n" +
+	"\venvironment\x18\x06 \x03(\v2<.io.harness.product.ci.engine.proto.RunStep.EnvironmentEntryR\venvironment\x12L\n" +
 	"\n" +
-	"shell_type\x18\a \x01(\x0e2\x10.proto.ShellTypeR\tshellType\x12\x16\n" +
+	"shell_type\x18\a \x01(\x0e2-.io.harness.product.ci.engine.proto.ShellTypeR\tshellType\x12\x16\n" +
 	"\x06detach\x18\b \x01(\bR\x06detach\x12\x1e\n" +
 	"\n" +
 	"entrypoint\x18\t \x03(\tR\n" +
 	"entrypoint\x12\x14\n" +
 	"\x05image\x18\n" +
-	" \x01(\tR\x05image\x12/\n" +
-	"\aoutputs\x18\v \x03(\v2\x15.proto.OutputVariableR\aoutputs\x12#\n" +
+	" \x01(\tR\x05image\x12L\n" +
+	"\aoutputs\x18\v \x03(\v22.io.harness.product.ci.engine.proto.OutputVariableR\aoutputs\x12#\n" +
 	"\rparse_savings\x18\f \x01(\bR\fparseSavings\x124\n" +
 	"\x16script_secrets_runtime\x18\r \x01(\bR\x14scriptSecretsRuntime\x1a>\n" +
 	"\x10EnvironmentEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
-	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\x94\x01\n" +
-	"\x0eOutputVariable\x124\n" +
-	"\x04type\x18\x02 \x01(\x0e2 .proto.OutputVariable.OutputTypeR\x04type\x12\x10\n" +
+	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xb1\x01\n" +
+	"\x0eOutputVariable\x12Q\n" +
+	"\x04type\x18\x02 \x01(\x0e2=.io.harness.product.ci.engine.proto.OutputVariable.OutputTypeR\x04type\x12\x10\n" +
 	"\x03key\x18\x03 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x04 \x01(\tR\x05value\"$\n" +
 	"\n" +
@@ -2374,22 +2374,22 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\n" +
 	"\x06STRING\x10\x00\x12\n" +
 	"\n" +
-	"\x06SECRET\x10\x01\"\xf7\x04\n" +
+	"\x06SECRET\x10\x01\"\x88\x06\n" +
 	"\rRunTestStepV2\x12\x18\n" +
-	"\acommand\x18\x01 \x01(\tR\acommand\x12,\n" +
-	"\acontext\x18\x02 \x01(\v2\x12.proto.StepContextR\acontext\x12&\n" +
+	"\acommand\x18\x01 \x01(\tR\acommand\x12I\n" +
+	"\acontext\x18\x02 \x01(\v2/.io.harness.product.ci.engine.proto.StepContextR\acontext\x12&\n" +
 	"\x0fenv_var_outputs\x18\x03 \x03(\tR\renvVarOutputs\x12%\n" +
-	"\x0econtainer_port\x18\x04 \x01(\rR\rcontainerPort\x12'\n" +
-	"\areports\x18\x05 \x03(\v2\r.proto.ReportR\areports\x12G\n" +
-	"\venvironment\x18\x06 \x03(\v2%.proto.RunTestStepV2.EnvironmentEntryR\venvironment\x12/\n" +
+	"\x0econtainer_port\x18\x04 \x01(\rR\rcontainerPort\x12D\n" +
+	"\areports\x18\x05 \x03(\v2*.io.harness.product.ci.engine.proto.ReportR\areports\x12d\n" +
+	"\venvironment\x18\x06 \x03(\v2B.io.harness.product.ci.engine.proto.RunTestStepV2.EnvironmentEntryR\venvironment\x12L\n" +
 	"\n" +
-	"shell_type\x18\a \x01(\x0e2\x10.proto.ShellTypeR\tshellType\x12\x1e\n" +
+	"shell_type\x18\a \x01(\x0e2-.io.harness.product.ci.engine.proto.ShellTypeR\tshellType\x12\x1e\n" +
 	"\n" +
 	"entrypoint\x18\b \x03(\tR\n" +
 	"entrypoint\x12\x14\n" +
-	"\x05image\x18\t \x01(\tR\x05image\x12/\n" +
+	"\x05image\x18\t \x01(\tR\x05image\x12L\n" +
 	"\aoutputs\x18\n" +
-	" \x03(\v2\x15.proto.OutputVariableR\aoutputs\x12\x1d\n" +
+	" \x03(\v22.io.harness.product.ci.engine.proto.OutputVariableR\aoutputs\x12\x1d\n" +
 	"\n" +
 	"diff_files\x18\v \x01(\tR\tdiffFiles\x12+\n" +
 	"\x11intelligence_mode\x18\f \x01(\bR\x10intelligenceMode\x12\x14\n" +
@@ -2397,18 +2397,18 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\rparse_savings\x18\x0e \x01(\bR\fparseSavings\x1a>\n" +
 	"\x10EnvironmentEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
-	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xc1\x03\n" +
+	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\x98\x04\n" +
 	"\n" +
 	"PluginStep\x12\x14\n" +
-	"\x05image\x18\x01 \x01(\tR\x05image\x12,\n" +
-	"\acontext\x18\x02 \x01(\v2\x12.proto.StepContextR\acontext\x12%\n" +
+	"\x05image\x18\x01 \x01(\tR\x05image\x12I\n" +
+	"\acontext\x18\x02 \x01(\v2/.io.harness.product.ci.engine.proto.StepContextR\acontext\x12%\n" +
 	"\x0econtainer_port\x18\x03 \x01(\rR\rcontainerPort\x12\x1e\n" +
 	"\n" +
 	"entrypoint\x18\x04 \x03(\tR\n" +
-	"entrypoint\x12D\n" +
-	"\venvironment\x18\x05 \x03(\v2\".proto.PluginStep.EnvironmentEntryR\venvironment\x12,\n" +
-	"\x12artifact_file_path\x18\x06 \x01(\tR\x10artifactFilePath\x12'\n" +
-	"\areports\x18\a \x03(\v2\r.proto.ReportR\areports\x12&\n" +
+	"entrypoint\x12a\n" +
+	"\venvironment\x18\x05 \x03(\v2?.io.harness.product.ci.engine.proto.PluginStep.EnvironmentEntryR\venvironment\x12,\n" +
+	"\x12artifact_file_path\x18\x06 \x01(\tR\x10artifactFilePath\x12D\n" +
+	"\areports\x18\a \x03(\v2*.io.harness.product.ci.engine.proto.ReportR\areports\x12&\n" +
 	"\x0fenv_var_outputs\x18\b \x03(\tR\renvVarOutputs\x12#\n" +
 	"\rparse_savings\x18\t \x01(\bR\fparseSavings\x1a>\n" +
 	"\x10EnvironmentEntry\x12\x10\n" +
@@ -2419,53 +2419,53 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\x05paths\x18\x02 \x03(\tR\x05paths\"O\n" +
 	"\x10RestoreCacheStep\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12)\n" +
-	"\x11fail_if_not_exist\x18\x02 \x01(\bR\x0efailIfNotExist\"\xb8\x01\n" +
+	"\x11fail_if_not_exist\x18\x02 \x01(\bR\x0efailIfNotExist\"\xd5\x01\n" +
 	"\vExecuteStep\x12'\n" +
 	"\x0ftask_parameters\x18\x01 \x01(\fR\x0etaskParameters\x12'\n" +
-	"\x0fexecute_command\x18\x02 \x01(\tR\x0eexecuteCommand\x12/\n" +
+	"\x0fexecute_command\x18\x02 \x01(\tR\x0eexecuteCommand\x12L\n" +
 	"\n" +
-	"shell_type\x18\x03 \x01(\x0e2\x10.proto.ShellTypeR\tshellType\x12&\n" +
-	"\x0fenv_var_outputs\x18\x04 \x03(\tR\renvVarOutputs\"\x8a\a\n" +
+	"shell_type\x18\x03 \x01(\x0e2-.io.harness.product.ci.engine.proto.ShellTypeR\tshellType\x12&\n" +
+	"\x0fenv_var_outputs\x18\x04 \x03(\tR\renvVarOutputs\"\x8f\t\n" +
 	"\bUnitStep\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12!\n" +
-	"\fdisplay_name\x18\x02 \x01(\tR\vdisplayName\x12\"\n" +
-	"\x03run\x18\x03 \x01(\v2\x0e.proto.RunStepH\x00R\x03run\x125\n" +
+	"\fdisplay_name\x18\x02 \x01(\tR\vdisplayName\x12?\n" +
+	"\x03run\x18\x03 \x01(\v2+.io.harness.product.ci.engine.proto.RunStepH\x00R\x03run\x12R\n" +
 	"\n" +
-	"save_cache\x18\x04 \x01(\v2\x14.proto.SaveCacheStepH\x00R\tsaveCache\x12>\n" +
-	"\rrestore_cache\x18\x05 \x01(\v2\x17.proto.RestoreCacheStepH\x00R\frestoreCache\x12J\n" +
-	"\x11publish_artifacts\x18\x06 \x01(\v2\x1b.proto.PublishArtifactsStepH\x00R\x10publishArtifacts\x12+\n" +
-	"\x06plugin\x18\t \x01(\v2\x11.proto.PluginStepH\x00R\x06plugin\x121\n" +
+	"save_cache\x18\x04 \x01(\v21.io.harness.product.ci.engine.proto.SaveCacheStepH\x00R\tsaveCache\x12[\n" +
+	"\rrestore_cache\x18\x05 \x01(\v24.io.harness.product.ci.engine.proto.RestoreCacheStepH\x00R\frestoreCache\x12g\n" +
+	"\x11publish_artifacts\x18\x06 \x01(\v28.io.harness.product.ci.engine.proto.PublishArtifactsStepH\x00R\x10publishArtifacts\x12H\n" +
+	"\x06plugin\x18\t \x01(\v2..io.harness.product.ci.engine.proto.PluginStepH\x00R\x06plugin\x12N\n" +
 	"\brunTests\x18\n" +
-	" \x01(\v2\x13.proto.RunTestsStepH\x00R\brunTests\x126\n" +
-	"\vexecuteTask\x18\x0f \x01(\v2\x12.proto.ExecuteStepH\x00R\vexecuteTask\x12<\n" +
-	"\rrunTestStepV2\x18\x10 \x01(\v2\x14.proto.RunTestStepV2H\x00R\rrunTestStepV2\x12%\n" +
+	" \x01(\v20.io.harness.product.ci.engine.proto.RunTestsStepH\x00R\brunTests\x12S\n" +
+	"\vexecuteTask\x18\x0f \x01(\v2/.io.harness.product.ci.engine.proto.ExecuteStepH\x00R\vexecuteTask\x12Y\n" +
+	"\rrunTestStepV2\x18\x10 \x01(\v21.io.harness.product.ci.engine.proto.RunTestStepV2H\x00R\rrunTestStepV2\x12%\n" +
 	"\x0ecallback_token\x18\a \x01(\tR\rcallbackToken\x12\x17\n" +
 	"\atask_id\x18\b \x01(\tR\x06taskId\x12%\n" +
 	"\x0eskip_condition\x18\v \x01(\tR\rskipCondition\x12\x17\n" +
 	"\alog_key\x18\f \x01(\tR\x06logKey\x12\x1d\n" +
 	"\n" +
 	"account_id\x18\r \x01(\tR\taccountId\x12%\n" +
-	"\x0econtainer_port\x18\x0e \x01(\rR\rcontainerPort\x12R\n" +
-	"\x11connector_secrets\x18\x12 \x03(\v2%.proto.UnitStep.ConnectorSecretsEntryR\x10connectorSecrets\x12'\n" +
+	"\x0econtainer_port\x18\x0e \x01(\rR\rcontainerPort\x12o\n" +
+	"\x11connector_secrets\x18\x12 \x03(\v2B.io.harness.product.ci.engine.proto.UnitStep.ConnectorSecretsEntryR\x10connectorSecrets\x12'\n" +
 	"\x0fruntime_secrets\x18\x11 \x03(\tR\x0eruntimeSecrets\x1aC\n" +
 	"\x15ConnectorSecretsEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01B\x06\n" +
-	"\x04step\"h\n" +
+	"\x04step\"\x85\x01\n" +
 	"\fParallelStep\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12!\n" +
-	"\fdisplay_name\x18\x02 \x01(\tR\vdisplayName\x12%\n" +
-	"\x05steps\x18\x03 \x03(\v2\x0f.proto.UnitStepR\x05steps\"h\n" +
-	"\x04Step\x121\n" +
-	"\bparallel\x18\x01 \x01(\v2\x13.proto.ParallelStepH\x00R\bparallel\x12%\n" +
-	"\x04unit\x18\x02 \x01(\v2\x0f.proto.UnitStepH\x00R\x04unitB\x06\n" +
-	"\x04step\"M\n" +
-	"\tExecution\x12!\n" +
-	"\x05steps\x18\x01 \x03(\v2\v.proto.StepR\x05steps\x12\x1d\n" +
+	"\fdisplay_name\x18\x02 \x01(\tR\vdisplayName\x12B\n" +
+	"\x05steps\x18\x03 \x03(\v2,.io.harness.product.ci.engine.proto.UnitStepR\x05steps\"\xa2\x01\n" +
+	"\x04Step\x12N\n" +
+	"\bparallel\x18\x01 \x01(\v20.io.harness.product.ci.engine.proto.ParallelStepH\x00R\bparallel\x12B\n" +
+	"\x04unit\x18\x02 \x01(\v2,.io.harness.product.ci.engine.proto.UnitStepH\x00R\x04unitB\x06\n" +
+	"\x04step\"j\n" +
+	"\tExecution\x12>\n" +
+	"\x05steps\x18\x01 \x03(\v2(.io.harness.product.ci.engine.proto.StepR\x05steps\x12\x1d\n" +
 	"\n" +
-	"account_id\x18\x02 \x01(\tR\taccountId\"|\n" +
-	"\x12UpdateStateRequest\x128\n" +
-	"\x06action\x18\x01 \x01(\x0e2 .proto.UpdateStateRequest.ActionR\x06action\",\n" +
+	"account_id\x18\x02 \x01(\tR\taccountId\"\x99\x01\n" +
+	"\x12UpdateStateRequest\x12U\n" +
+	"\x06action\x18\x01 \x01(\x0e2=.io.harness.product.ci.engine.proto.UpdateStateRequest.ActionR\x06action\",\n" +
 	"\x06Action\x12\v\n" +
 	"\aUNKNOWN\x10\x00\x12\t\n" +
 	"\x05PAUSE\x10\x01\x12\n" +
@@ -2480,30 +2480,30 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\n" +
 	"entrypoint\x18\x01 \x03(\tR\n" +
 	"entrypoint\x12\x12\n" +
-	"\x04args\x18\x02 \x03(\tR\x04args\"~\n" +
+	"\x04args\x18\x02 \x03(\tR\x04args\"\x9b\x01\n" +
 	"\n" +
-	"StepOutput\x125\n" +
-	"\x06output\x18\x02 \x03(\v2\x1d.proto.StepOutput.OutputEntryR\x06output\x1a9\n" +
+	"StepOutput\x12R\n" +
+	"\x06output\x18\x02 \x03(\v2:.io.harness.product.ci.engine.proto.StepOutput.OutputEntryR\x06output\x1a9\n" +
 	"\vOutputEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
-	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xf3\x01\n" +
+	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\xad\x02\n" +
 	"\x13EvaluateJEXLRequest\x12\x17\n" +
 	"\astep_id\x18\x01 \x01(\tR\x06stepId\x12 \n" +
-	"\vexpressions\x18\x02 \x03(\tR\vexpressions\x12N\n" +
-	"\fstep_outputs\x18\x03 \x03(\v2+.proto.EvaluateJEXLRequest.StepOutputsEntryR\vstepOutputs\x1aQ\n" +
+	"\vexpressions\x18\x02 \x03(\tR\vexpressions\x12k\n" +
+	"\fstep_outputs\x18\x03 \x03(\v2H.io.harness.product.ci.engine.proto.EvaluateJEXLRequest.StepOutputsEntryR\vstepOutputs\x1an\n" +
 	"\x10StepOutputsEntry\x12\x10\n" +
-	"\x03key\x18\x01 \x01(\tR\x03key\x12'\n" +
-	"\x05value\x18\x02 \x01(\v2\x11.proto.StepOutputR\x05value:\x028\x01\"\xcb\x01\n" +
-	"\x14EvaluateJEXLResponse\x12j\n" +
-	"\x15evaluated_expressions\x18\x01 \x03(\v25.proto.EvaluateJEXLResponse.EvaluatedExpressionsEntryR\x14evaluatedExpressions\x1aG\n" +
+	"\x03key\x18\x01 \x01(\tR\x03key\x12D\n" +
+	"\x05value\x18\x02 \x01(\v2..io.harness.product.ci.engine.proto.StepOutputR\x05value:\x028\x01\"\xe9\x01\n" +
+	"\x14EvaluateJEXLResponse\x12\x87\x01\n" +
+	"\x15evaluated_expressions\x18\x01 \x03(\v2R.io.harness.product.ci.engine.proto.EvaluateJEXLResponse.EvaluatedExpressionsEntryR\x14evaluatedExpressions\x1aG\n" +
 	"\x19EvaluatedExpressionsEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\r\n" +
 	"\vPingRequest\"\x0e\n" +
-	"\fPingResponse\"\xf3\x02\n" +
+	"\fPingResponse\"\x90\x03\n" +
 	"\x12ExecuteStepRequest\x12!\n" +
-	"\fexecution_id\x18\x01 \x01(\tR\vexecutionId\x12#\n" +
-	"\x04step\x18\x02 \x01(\v2\x0f.proto.UnitStepR\x04step\x12\"\n" +
+	"\fexecution_id\x18\x01 \x01(\tR\vexecutionId\x12@\n" +
+	"\x04step\x18\x02 \x01(\v2,.io.harness.product.ci.engine.proto.UnitStepR\x04step\x12\"\n" +
 	"\rtmp_file_path\x18\x03 \x01(\tR\vtmpFilePath\x122\n" +
 	"\x15delegate_svc_endpoint\x18\x04 \x01(\tR\x13delegateSvcEndpoint\x120\n" +
 	"\x14manager_svc_endpoint\x18\x05 \x01(\tR\x12managerSvcEndpoint\x12\x1f\n" +
@@ -2514,9 +2514,9 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\vdelegate_id\x18\b \x01(\tR\n" +
 	"delegateId\x12(\n" +
 	"\x10marker_file_uuid\x18\t \x01(\tR\x0emarkerFileUuid\"\x15\n" +
-	"\x13ExecuteStepResponse\"Z\n" +
-	"\x16OutputVariablesWrapper\x12@\n" +
-	"\x10output_variables\x18\x01 \x03(\v2\x15.proto.OutputVariableR\x0foutputVariables*_\n" +
+	"\x13ExecuteStepResponse\"w\n" +
+	"\x16OutputVariablesWrapper\x12]\n" +
+	"\x10output_variables\x18\x01 \x03(\v22.io.harness.product.ci.engine.proto.OutputVariableR\x0foutputVariables*_\n" +
 	"\tShellType\x12\x06\n" +
 	"\x02SH\x10\x00\x12\b\n" +
 	"\x04BASH\x10\x01\x12\x0e\n" +
@@ -2525,125 +2525,125 @@ const file_proto_execution_proto_rawDesc = "" +
 	"\x04PWSH\x10\x03\x12\n" +
 	"\n" +
 	"\x06PYTHON\x10\x04\x12\x1a\n" +
-	"\x16SHELL_TYPE_UNSPECIFIED\x10\x052\xed\x02\n" +
+	"\x16SHELL_TYPE_UNSPECIFIED\x10\x052\x91\x05\n" +
 	"\n" +
-	"LiteEngine\x12D\n" +
-	"\vUpdateState\x12\x19.proto.UpdateStateRequest\x1a\x1a.proto.UpdateStateResponse\x12Y\n" +
-	"\x12GetImageEntrypoint\x12 .proto.GetImageEntrypointRequest\x1a!.proto.GetImageEntrypointResponse\x12G\n" +
-	"\fEvaluateJEXL\x12\x1a.proto.EvaluateJEXLRequest\x1a\x1b.proto.EvaluateJEXLResponse\x12/\n" +
-	"\x04Ping\x12\x12.proto.PingRequest\x1a\x13.proto.PingResponse\x12D\n" +
-	"\vExecuteStep\x12\x19.proto.ExecuteStepRequest\x1a\x1a.proto.ExecuteStepResponseB8P\x01Z4github.com/vcalasansh/k8s-engine-commons/proto;protob\x06proto3"
+	"LiteEngine\x12~\n" +
+	"\vUpdateState\x126.io.harness.product.ci.engine.proto.UpdateStateRequest\x1a7.io.harness.product.ci.engine.proto.UpdateStateResponse\x12\x93\x01\n" +
+	"\x12GetImageEntrypoint\x12=.io.harness.product.ci.engine.proto.GetImageEntrypointRequest\x1a>.io.harness.product.ci.engine.proto.GetImageEntrypointResponse\x12\x81\x01\n" +
+	"\fEvaluateJEXL\x127.io.harness.product.ci.engine.proto.EvaluateJEXLRequest\x1a8.io.harness.product.ci.engine.proto.EvaluateJEXLResponse\x12i\n" +
+	"\x04Ping\x12/.io.harness.product.ci.engine.proto.PingRequest\x1a0.io.harness.product.ci.engine.proto.PingResponse\x12~\n" +
+	"\vExecuteStep\x126.io.harness.product.ci.engine.proto.ExecuteStepRequest\x1a7.io.harness.product.ci.engine.proto.ExecuteStepResponseB8P\x01Z4github.com/vcalasansh/k8s-engine-commons/proto;protob\x06proto3"
 
 var (
-	file_proto_execution_proto_rawDescOnce sync.Once
-	file_proto_execution_proto_rawDescData []byte
+	file_io_harness_product_ci_engine_proto_execution_proto_rawDescOnce sync.Once
+	file_io_harness_product_ci_engine_proto_execution_proto_rawDescData []byte
 )
 
-func file_proto_execution_proto_rawDescGZIP() []byte {
-	file_proto_execution_proto_rawDescOnce.Do(func() {
-		file_proto_execution_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_execution_proto_rawDesc), len(file_proto_execution_proto_rawDesc)))
+func file_io_harness_product_ci_engine_proto_execution_proto_rawDescGZIP() []byte {
+	file_io_harness_product_ci_engine_proto_execution_proto_rawDescOnce.Do(func() {
+		file_io_harness_product_ci_engine_proto_execution_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_io_harness_product_ci_engine_proto_execution_proto_rawDesc), len(file_io_harness_product_ci_engine_proto_execution_proto_rawDesc)))
 	})
-	return file_proto_execution_proto_rawDescData
+	return file_io_harness_product_ci_engine_proto_execution_proto_rawDescData
 }
 
-var file_proto_execution_proto_enumTypes = make([]protoimpl.EnumInfo, 4)
-var file_proto_execution_proto_msgTypes = make([]protoimpl.MessageInfo, 35)
-var file_proto_execution_proto_goTypes = []any{
-	(ShellType)(0),                     // 0: proto.ShellType
-	(Report_Type)(0),                   // 1: proto.Report.Type
-	(OutputVariable_OutputType)(0),     // 2: proto.OutputVariable.OutputType
-	(UpdateStateRequest_Action)(0),     // 3: proto.UpdateStateRequest.Action
-	(*StepContext)(nil),                // 4: proto.StepContext
-	(*PublishArtifactsStep)(nil),       // 5: proto.PublishArtifactsStep
-	(*Report)(nil),                     // 6: proto.Report
-	(*RunTestsStep)(nil),               // 7: proto.RunTestsStep
-	(*RunStep)(nil),                    // 8: proto.RunStep
-	(*OutputVariable)(nil),             // 9: proto.OutputVariable
-	(*RunTestStepV2)(nil),              // 10: proto.RunTestStepV2
-	(*PluginStep)(nil),                 // 11: proto.PluginStep
-	(*SaveCacheStep)(nil),              // 12: proto.SaveCacheStep
-	(*RestoreCacheStep)(nil),           // 13: proto.RestoreCacheStep
-	(*ExecuteStep)(nil),                // 14: proto.ExecuteStep
-	(*UnitStep)(nil),                   // 15: proto.UnitStep
-	(*ParallelStep)(nil),               // 16: proto.ParallelStep
-	(*Step)(nil),                       // 17: proto.Step
-	(*Execution)(nil),                  // 18: proto.Execution
-	(*UpdateStateRequest)(nil),         // 19: proto.UpdateStateRequest
-	(*UpdateStateResponse)(nil),        // 20: proto.UpdateStateResponse
-	(*GetImageEntrypointRequest)(nil),  // 21: proto.GetImageEntrypointRequest
-	(*GetImageEntrypointResponse)(nil), // 22: proto.GetImageEntrypointResponse
-	(*StepOutput)(nil),                 // 23: proto.StepOutput
-	(*EvaluateJEXLRequest)(nil),        // 24: proto.EvaluateJEXLRequest
-	(*EvaluateJEXLResponse)(nil),       // 25: proto.EvaluateJEXLResponse
-	(*PingRequest)(nil),                // 26: proto.PingRequest
-	(*PingResponse)(nil),               // 27: proto.PingResponse
-	(*ExecuteStepRequest)(nil),         // 28: proto.ExecuteStepRequest
-	(*ExecuteStepResponse)(nil),        // 29: proto.ExecuteStepResponse
-	(*OutputVariablesWrapper)(nil),     // 30: proto.OutputVariablesWrapper
-	nil,                                // 31: proto.RunTestsStep.EnvironmentEntry
-	nil,                                // 32: proto.RunStep.EnvironmentEntry
-	nil,                                // 33: proto.RunTestStepV2.EnvironmentEntry
-	nil,                                // 34: proto.PluginStep.EnvironmentEntry
-	nil,                                // 35: proto.UnitStep.ConnectorSecretsEntry
-	nil,                                // 36: proto.StepOutput.OutputEntry
-	nil,                                // 37: proto.EvaluateJEXLRequest.StepOutputsEntry
-	nil,                                // 38: proto.EvaluateJEXLResponse.EvaluatedExpressionsEntry
-	(*UploadFile)(nil),                 // 39: proto.UploadFile
-	(*BuildPublishImage)(nil),          // 40: proto.BuildPublishImage
+var file_io_harness_product_ci_engine_proto_execution_proto_enumTypes = make([]protoimpl.EnumInfo, 4)
+var file_io_harness_product_ci_engine_proto_execution_proto_msgTypes = make([]protoimpl.MessageInfo, 35)
+var file_io_harness_product_ci_engine_proto_execution_proto_goTypes = []any{
+	(ShellType)(0),                     // 0: io.harness.product.ci.engine.proto.ShellType
+	(Report_Type)(0),                   // 1: io.harness.product.ci.engine.proto.Report.Type
+	(OutputVariable_OutputType)(0),     // 2: io.harness.product.ci.engine.proto.OutputVariable.OutputType
+	(UpdateStateRequest_Action)(0),     // 3: io.harness.product.ci.engine.proto.UpdateStateRequest.Action
+	(*StepContext)(nil),                // 4: io.harness.product.ci.engine.proto.StepContext
+	(*PublishArtifactsStep)(nil),       // 5: io.harness.product.ci.engine.proto.PublishArtifactsStep
+	(*Report)(nil),                     // 6: io.harness.product.ci.engine.proto.Report
+	(*RunTestsStep)(nil),               // 7: io.harness.product.ci.engine.proto.RunTestsStep
+	(*RunStep)(nil),                    // 8: io.harness.product.ci.engine.proto.RunStep
+	(*OutputVariable)(nil),             // 9: io.harness.product.ci.engine.proto.OutputVariable
+	(*RunTestStepV2)(nil),              // 10: io.harness.product.ci.engine.proto.RunTestStepV2
+	(*PluginStep)(nil),                 // 11: io.harness.product.ci.engine.proto.PluginStep
+	(*SaveCacheStep)(nil),              // 12: io.harness.product.ci.engine.proto.SaveCacheStep
+	(*RestoreCacheStep)(nil),           // 13: io.harness.product.ci.engine.proto.RestoreCacheStep
+	(*ExecuteStep)(nil),                // 14: io.harness.product.ci.engine.proto.ExecuteStep
+	(*UnitStep)(nil),                   // 15: io.harness.product.ci.engine.proto.UnitStep
+	(*ParallelStep)(nil),               // 16: io.harness.product.ci.engine.proto.ParallelStep
+	(*Step)(nil),                       // 17: io.harness.product.ci.engine.proto.Step
+	(*Execution)(nil),                  // 18: io.harness.product.ci.engine.proto.Execution
+	(*UpdateStateRequest)(nil),         // 19: io.harness.product.ci.engine.proto.UpdateStateRequest
+	(*UpdateStateResponse)(nil),        // 20: io.harness.product.ci.engine.proto.UpdateStateResponse
+	(*GetImageEntrypointRequest)(nil),  // 21: io.harness.product.ci.engine.proto.GetImageEntrypointRequest
+	(*GetImageEntrypointResponse)(nil), // 22: io.harness.product.ci.engine.proto.GetImageEntrypointResponse
+	(*StepOutput)(nil),                 // 23: io.harness.product.ci.engine.proto.StepOutput
+	(*EvaluateJEXLRequest)(nil),        // 24: io.harness.product.ci.engine.proto.EvaluateJEXLRequest
+	(*EvaluateJEXLResponse)(nil),       // 25: io.harness.product.ci.engine.proto.EvaluateJEXLResponse
+	(*PingRequest)(nil),                // 26: io.harness.product.ci.engine.proto.PingRequest
+	(*PingResponse)(nil),               // 27: io.harness.product.ci.engine.proto.PingResponse
+	(*ExecuteStepRequest)(nil),         // 28: io.harness.product.ci.engine.proto.ExecuteStepRequest
+	(*ExecuteStepResponse)(nil),        // 29: io.harness.product.ci.engine.proto.ExecuteStepResponse
+	(*OutputVariablesWrapper)(nil),     // 30: io.harness.product.ci.engine.proto.OutputVariablesWrapper
+	nil,                                // 31: io.harness.product.ci.engine.proto.RunTestsStep.EnvironmentEntry
+	nil,                                // 32: io.harness.product.ci.engine.proto.RunStep.EnvironmentEntry
+	nil,                                // 33: io.harness.product.ci.engine.proto.RunTestStepV2.EnvironmentEntry
+	nil,                                // 34: io.harness.product.ci.engine.proto.PluginStep.EnvironmentEntry
+	nil,                                // 35: io.harness.product.ci.engine.proto.UnitStep.ConnectorSecretsEntry
+	nil,                                // 36: io.harness.product.ci.engine.proto.StepOutput.OutputEntry
+	nil,                                // 37: io.harness.product.ci.engine.proto.EvaluateJEXLRequest.StepOutputsEntry
+	nil,                                // 38: io.harness.product.ci.engine.proto.EvaluateJEXLResponse.EvaluatedExpressionsEntry
+	(*UploadFile)(nil),                 // 39: io.harness.product.ci.engine.proto.UploadFile
+	(*BuildPublishImage)(nil),          // 40: io.harness.product.ci.engine.proto.BuildPublishImage
 }
-var file_proto_execution_proto_depIdxs = []int32{
-	39, // 0: proto.PublishArtifactsStep.files:type_name -> proto.UploadFile
-	40, // 1: proto.PublishArtifactsStep.images:type_name -> proto.BuildPublishImage
-	1,  // 2: proto.Report.type:type_name -> proto.Report.Type
-	4,  // 3: proto.RunTestsStep.context:type_name -> proto.StepContext
-	6,  // 4: proto.RunTestsStep.reports:type_name -> proto.Report
-	31, // 5: proto.RunTestsStep.environment:type_name -> proto.RunTestsStep.EnvironmentEntry
-	9,  // 6: proto.RunTestsStep.outputs:type_name -> proto.OutputVariable
-	4,  // 7: proto.RunStep.context:type_name -> proto.StepContext
-	6,  // 8: proto.RunStep.reports:type_name -> proto.Report
-	32, // 9: proto.RunStep.environment:type_name -> proto.RunStep.EnvironmentEntry
-	0,  // 10: proto.RunStep.shell_type:type_name -> proto.ShellType
-	9,  // 11: proto.RunStep.outputs:type_name -> proto.OutputVariable
-	2,  // 12: proto.OutputVariable.type:type_name -> proto.OutputVariable.OutputType
-	4,  // 13: proto.RunTestStepV2.context:type_name -> proto.StepContext
-	6,  // 14: proto.RunTestStepV2.reports:type_name -> proto.Report
-	33, // 15: proto.RunTestStepV2.environment:type_name -> proto.RunTestStepV2.EnvironmentEntry
-	0,  // 16: proto.RunTestStepV2.shell_type:type_name -> proto.ShellType
-	9,  // 17: proto.RunTestStepV2.outputs:type_name -> proto.OutputVariable
-	4,  // 18: proto.PluginStep.context:type_name -> proto.StepContext
-	34, // 19: proto.PluginStep.environment:type_name -> proto.PluginStep.EnvironmentEntry
-	6,  // 20: proto.PluginStep.reports:type_name -> proto.Report
-	0,  // 21: proto.ExecuteStep.shell_type:type_name -> proto.ShellType
-	8,  // 22: proto.UnitStep.run:type_name -> proto.RunStep
-	12, // 23: proto.UnitStep.save_cache:type_name -> proto.SaveCacheStep
-	13, // 24: proto.UnitStep.restore_cache:type_name -> proto.RestoreCacheStep
-	5,  // 25: proto.UnitStep.publish_artifacts:type_name -> proto.PublishArtifactsStep
-	11, // 26: proto.UnitStep.plugin:type_name -> proto.PluginStep
-	7,  // 27: proto.UnitStep.runTests:type_name -> proto.RunTestsStep
-	14, // 28: proto.UnitStep.executeTask:type_name -> proto.ExecuteStep
-	10, // 29: proto.UnitStep.runTestStepV2:type_name -> proto.RunTestStepV2
-	35, // 30: proto.UnitStep.connector_secrets:type_name -> proto.UnitStep.ConnectorSecretsEntry
-	15, // 31: proto.ParallelStep.steps:type_name -> proto.UnitStep
-	16, // 32: proto.Step.parallel:type_name -> proto.ParallelStep
-	15, // 33: proto.Step.unit:type_name -> proto.UnitStep
-	17, // 34: proto.Execution.steps:type_name -> proto.Step
-	3,  // 35: proto.UpdateStateRequest.action:type_name -> proto.UpdateStateRequest.Action
-	36, // 36: proto.StepOutput.output:type_name -> proto.StepOutput.OutputEntry
-	37, // 37: proto.EvaluateJEXLRequest.step_outputs:type_name -> proto.EvaluateJEXLRequest.StepOutputsEntry
-	38, // 38: proto.EvaluateJEXLResponse.evaluated_expressions:type_name -> proto.EvaluateJEXLResponse.EvaluatedExpressionsEntry
-	15, // 39: proto.ExecuteStepRequest.step:type_name -> proto.UnitStep
-	9,  // 40: proto.OutputVariablesWrapper.output_variables:type_name -> proto.OutputVariable
-	23, // 41: proto.EvaluateJEXLRequest.StepOutputsEntry.value:type_name -> proto.StepOutput
-	19, // 42: proto.LiteEngine.UpdateState:input_type -> proto.UpdateStateRequest
-	21, // 43: proto.LiteEngine.GetImageEntrypoint:input_type -> proto.GetImageEntrypointRequest
-	24, // 44: proto.LiteEngine.EvaluateJEXL:input_type -> proto.EvaluateJEXLRequest
-	26, // 45: proto.LiteEngine.Ping:input_type -> proto.PingRequest
-	28, // 46: proto.LiteEngine.ExecuteStep:input_type -> proto.ExecuteStepRequest
-	20, // 47: proto.LiteEngine.UpdateState:output_type -> proto.UpdateStateResponse
-	22, // 48: proto.LiteEngine.GetImageEntrypoint:output_type -> proto.GetImageEntrypointResponse
-	25, // 49: proto.LiteEngine.EvaluateJEXL:output_type -> proto.EvaluateJEXLResponse
-	27, // 50: proto.LiteEngine.Ping:output_type -> proto.PingResponse
-	29, // 51: proto.LiteEngine.ExecuteStep:output_type -> proto.ExecuteStepResponse
+var file_io_harness_product_ci_engine_proto_execution_proto_depIdxs = []int32{
+	39, // 0: io.harness.product.ci.engine.proto.PublishArtifactsStep.files:type_name -> io.harness.product.ci.engine.proto.UploadFile
+	40, // 1: io.harness.product.ci.engine.proto.PublishArtifactsStep.images:type_name -> io.harness.product.ci.engine.proto.BuildPublishImage
+	1,  // 2: io.harness.product.ci.engine.proto.Report.type:type_name -> io.harness.product.ci.engine.proto.Report.Type
+	4,  // 3: io.harness.product.ci.engine.proto.RunTestsStep.context:type_name -> io.harness.product.ci.engine.proto.StepContext
+	6,  // 4: io.harness.product.ci.engine.proto.RunTestsStep.reports:type_name -> io.harness.product.ci.engine.proto.Report
+	31, // 5: io.harness.product.ci.engine.proto.RunTestsStep.environment:type_name -> io.harness.product.ci.engine.proto.RunTestsStep.EnvironmentEntry
+	9,  // 6: io.harness.product.ci.engine.proto.RunTestsStep.outputs:type_name -> io.harness.product.ci.engine.proto.OutputVariable
+	4,  // 7: io.harness.product.ci.engine.proto.RunStep.context:type_name -> io.harness.product.ci.engine.proto.StepContext
+	6,  // 8: io.harness.product.ci.engine.proto.RunStep.reports:type_name -> io.harness.product.ci.engine.proto.Report
+	32, // 9: io.harness.product.ci.engine.proto.RunStep.environment:type_name -> io.harness.product.ci.engine.proto.RunStep.EnvironmentEntry
+	0,  // 10: io.harness.product.ci.engine.proto.RunStep.shell_type:type_name -> io.harness.product.ci.engine.proto.ShellType
+	9,  // 11: io.harness.product.ci.engine.proto.RunStep.outputs:type_name -> io.harness.product.ci.engine.proto.OutputVariable
+	2,  // 12: io.harness.product.ci.engine.proto.OutputVariable.type:type_name -> io.harness.product.ci.engine.proto.OutputVariable.OutputType
+	4,  // 13: io.harness.product.ci.engine.proto.RunTestStepV2.context:type_name -> io.harness.product.ci.engine.proto.StepContext
+	6,  // 14: io.harness.product.ci.engine.proto.RunTestStepV2.reports:type_name -> io.harness.product.ci.engine.proto.Report
+	33, // 15: io.harness.product.ci.engine.proto.RunTestStepV2.environment:type_name -> io.harness.product.ci.engine.proto.RunTestStepV2.EnvironmentEntry
+	0,  // 16: io.harness.product.ci.engine.proto.RunTestStepV2.shell_type:type_name -> io.harness.product.ci.engine.proto.ShellType
+	9,  // 17: io.harness.product.ci.engine.proto.RunTestStepV2.outputs:type_name -> io.harness.product.ci.engine.proto.OutputVariable
+	4,  // 18: io.harness.product.ci.engine.proto.PluginStep.context:type_name -> io.harness.product.ci.engine.proto.StepContext
+	34, // 19: io.harness.product.ci.engine.proto.PluginStep.environment:type_name -> io.harness.product.ci.engine.proto.PluginStep.EnvironmentEntry
+	6,  // 20: io.harness.product.ci.engine.proto.PluginStep.reports:type_name -> io.harness.product.ci.engine.proto.Report
+	0,  // 21: io.harness.product.ci.engine.proto.ExecuteStep.shell_type:type_name -> io.harness.product.ci.engine.proto.ShellType
+	8,  // 22: io.harness.product.ci.engine.proto.UnitStep.run:type_name -> io.harness.product.ci.engine.proto.RunStep
+	12, // 23: io.harness.product.ci.engine.proto.UnitStep.save_cache:type_name -> io.harness.product.ci.engine.proto.SaveCacheStep
+	13, // 24: io.harness.product.ci.engine.proto.UnitStep.restore_cache:type_name -> io.harness.product.ci.engine.proto.RestoreCacheStep
+	5,  // 25: io.harness.product.ci.engine.proto.UnitStep.publish_artifacts:type_name -> io.harness.product.ci.engine.proto.PublishArtifactsStep
+	11, // 26: io.harness.product.ci.engine.proto.UnitStep.plugin:type_name -> io.harness.product.ci.engine.proto.PluginStep
+	7,  // 27: io.harness.product.ci.engine.proto.UnitStep.runTests:type_name -> io.harness.product.ci.engine.proto.RunTestsStep
+	14, // 28: io.harness.product.ci.engine.proto.UnitStep.executeTask:type_name -> io.harness.product.ci.engine.proto.ExecuteStep
+	10, // 29: io.harness.product.ci.engine.proto.UnitStep.runTestStepV2:type_name -> io.harness.product.ci.engine.proto.RunTestStepV2
+	35, // 30: io.harness.product.ci.engine.proto.UnitStep.connector_secrets:type_name -> io.harness.product.ci.engine.proto.UnitStep.ConnectorSecretsEntry
+	15, // 31: io.harness.product.ci.engine.proto.ParallelStep.steps:type_name -> io.harness.product.ci.engine.proto.UnitStep
+	16, // 32: io.harness.product.ci.engine.proto.Step.parallel:type_name -> io.harness.product.ci.engine.proto.ParallelStep
+	15, // 33: io.harness.product.ci.engine.proto.Step.unit:type_name -> io.harness.product.ci.engine.proto.UnitStep
+	17, // 34: io.harness.product.ci.engine.proto.Execution.steps:type_name -> io.harness.product.ci.engine.proto.Step
+	3,  // 35: io.harness.product.ci.engine.proto.UpdateStateRequest.action:type_name -> io.harness.product.ci.engine.proto.UpdateStateRequest.Action
+	36, // 36: io.harness.product.ci.engine.proto.StepOutput.output:type_name -> io.harness.product.ci.engine.proto.StepOutput.OutputEntry
+	37, // 37: io.harness.product.ci.engine.proto.EvaluateJEXLRequest.step_outputs:type_name -> io.harness.product.ci.engine.proto.EvaluateJEXLRequest.StepOutputsEntry
+	38, // 38: io.harness.product.ci.engine.proto.EvaluateJEXLResponse.evaluated_expressions:type_name -> io.harness.product.ci.engine.proto.EvaluateJEXLResponse.EvaluatedExpressionsEntry
+	15, // 39: io.harness.product.ci.engine.proto.ExecuteStepRequest.step:type_name -> io.harness.product.ci.engine.proto.UnitStep
+	9,  // 40: io.harness.product.ci.engine.proto.OutputVariablesWrapper.output_variables:type_name -> io.harness.product.ci.engine.proto.OutputVariable
+	23, // 41: io.harness.product.ci.engine.proto.EvaluateJEXLRequest.StepOutputsEntry.value:type_name -> io.harness.product.ci.engine.proto.StepOutput
+	19, // 42: io.harness.product.ci.engine.proto.LiteEngine.UpdateState:input_type -> io.harness.product.ci.engine.proto.UpdateStateRequest
+	21, // 43: io.harness.product.ci.engine.proto.LiteEngine.GetImageEntrypoint:input_type -> io.harness.product.ci.engine.proto.GetImageEntrypointRequest
+	24, // 44: io.harness.product.ci.engine.proto.LiteEngine.EvaluateJEXL:input_type -> io.harness.product.ci.engine.proto.EvaluateJEXLRequest
+	26, // 45: io.harness.product.ci.engine.proto.LiteEngine.Ping:input_type -> io.harness.product.ci.engine.proto.PingRequest
+	28, // 46: io.harness.product.ci.engine.proto.LiteEngine.ExecuteStep:input_type -> io.harness.product.ci.engine.proto.ExecuteStepRequest
+	20, // 47: io.harness.product.ci.engine.proto.LiteEngine.UpdateState:output_type -> io.harness.product.ci.engine.proto.UpdateStateResponse
+	22, // 48: io.harness.product.ci.engine.proto.LiteEngine.GetImageEntrypoint:output_type -> io.harness.product.ci.engine.proto.GetImageEntrypointResponse
+	25, // 49: io.harness.product.ci.engine.proto.LiteEngine.EvaluateJEXL:output_type -> io.harness.product.ci.engine.proto.EvaluateJEXLResponse
+	27, // 50: io.harness.product.ci.engine.proto.LiteEngine.Ping:output_type -> io.harness.product.ci.engine.proto.PingResponse
+	29, // 51: io.harness.product.ci.engine.proto.LiteEngine.ExecuteStep:output_type -> io.harness.product.ci.engine.proto.ExecuteStepResponse
 	47, // [47:52] is the sub-list for method output_type
 	42, // [42:47] is the sub-list for method input_type
 	42, // [42:42] is the sub-list for extension type_name
@@ -2651,13 +2651,13 @@ var file_proto_execution_proto_depIdxs = []int32{
 	0,  // [0:42] is the sub-list for field type_name
 }
 
-func init() { file_proto_execution_proto_init() }
-func file_proto_execution_proto_init() {
-	if File_proto_execution_proto != nil {
+func init() { file_io_harness_product_ci_engine_proto_execution_proto_init() }
+func file_io_harness_product_ci_engine_proto_execution_proto_init() {
+	if File_io_harness_product_ci_engine_proto_execution_proto != nil {
 		return
 	}
-	file_proto_publish_artifact_proto_init()
-	file_proto_execution_proto_msgTypes[11].OneofWrappers = []any{
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_init()
+	file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[11].OneofWrappers = []any{
 		(*UnitStep_Run)(nil),
 		(*UnitStep_SaveCache)(nil),
 		(*UnitStep_RestoreCache)(nil),
@@ -2667,7 +2667,7 @@ func file_proto_execution_proto_init() {
 		(*UnitStep_ExecuteTask)(nil),
 		(*UnitStep_RunTestStepV2)(nil),
 	}
-	file_proto_execution_proto_msgTypes[13].OneofWrappers = []any{
+	file_io_harness_product_ci_engine_proto_execution_proto_msgTypes[13].OneofWrappers = []any{
 		(*Step_Parallel)(nil),
 		(*Step_Unit)(nil),
 	}
@@ -2675,18 +2675,18 @@ func file_proto_execution_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_execution_proto_rawDesc), len(file_proto_execution_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_io_harness_product_ci_engine_proto_execution_proto_rawDesc), len(file_io_harness_product_ci_engine_proto_execution_proto_rawDesc)),
 			NumEnums:      4,
 			NumMessages:   35,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_proto_execution_proto_goTypes,
-		DependencyIndexes: file_proto_execution_proto_depIdxs,
-		EnumInfos:         file_proto_execution_proto_enumTypes,
-		MessageInfos:      file_proto_execution_proto_msgTypes,
+		GoTypes:           file_io_harness_product_ci_engine_proto_execution_proto_goTypes,
+		DependencyIndexes: file_io_harness_product_ci_engine_proto_execution_proto_depIdxs,
+		EnumInfos:         file_io_harness_product_ci_engine_proto_execution_proto_enumTypes,
+		MessageInfos:      file_io_harness_product_ci_engine_proto_execution_proto_msgTypes,
 	}.Build()
-	File_proto_execution_proto = out.File
-	file_proto_execution_proto_goTypes = nil
-	file_proto_execution_proto_depIdxs = nil
+	File_io_harness_product_ci_engine_proto_execution_proto = out.File
+	file_io_harness_product_ci_engine_proto_execution_proto_goTypes = nil
+	file_io_harness_product_ci_engine_proto_execution_proto_depIdxs = nil
 }

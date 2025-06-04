@@ -7,7 +7,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: proto/execution.proto
+// source: io/harness/product/ci/engine/proto/execution.proto
 
 package proto
 
@@ -24,11 +24,11 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	LiteEngine_UpdateState_FullMethodName        = "/proto.LiteEngine/UpdateState"
-	LiteEngine_GetImageEntrypoint_FullMethodName = "/proto.LiteEngine/GetImageEntrypoint"
-	LiteEngine_EvaluateJEXL_FullMethodName       = "/proto.LiteEngine/EvaluateJEXL"
-	LiteEngine_Ping_FullMethodName               = "/proto.LiteEngine/Ping"
-	LiteEngine_ExecuteStep_FullMethodName        = "/proto.LiteEngine/ExecuteStep"
+	LiteEngine_UpdateState_FullMethodName        = "/io.harness.product.ci.engine.proto.LiteEngine/UpdateState"
+	LiteEngine_GetImageEntrypoint_FullMethodName = "/io.harness.product.ci.engine.proto.LiteEngine/GetImageEntrypoint"
+	LiteEngine_EvaluateJEXL_FullMethodName       = "/io.harness.product.ci.engine.proto.LiteEngine/EvaluateJEXL"
+	LiteEngine_Ping_FullMethodName               = "/io.harness.product.ci.engine.proto.LiteEngine/Ping"
+	LiteEngine_ExecuteStep_FullMethodName        = "/io.harness.product.ci.engine.proto.LiteEngine/ExecuteStep"
 )
 
 // LiteEngineClient is the client API for LiteEngine service.
@@ -265,7 +265,7 @@ func _LiteEngine_ExecuteStep_Handler(srv interface{}, ctx context.Context, dec f
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var LiteEngine_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.LiteEngine",
+	ServiceName: "io.harness.product.ci.engine.proto.LiteEngine",
 	HandlerType: (*LiteEngineServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -290,5 +290,5 @@ var LiteEngine_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/execution.proto",
+	Metadata: "io/harness/product/ci/engine/proto/execution.proto",
 }

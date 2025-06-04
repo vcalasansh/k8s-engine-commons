@@ -7,7 +7,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: proto/publish_artifact.proto
+// source: io/harness/product/ci/engine/proto/publish_artifact.proto
 
 package proto
 
@@ -73,11 +73,11 @@ func (x LocationType) String() string {
 }
 
 func (LocationType) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_publish_artifact_proto_enumTypes[0].Descriptor()
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes[0].Descriptor()
 }
 
 func (LocationType) Type() protoreflect.EnumType {
-	return &file_proto_publish_artifact_proto_enumTypes[0]
+	return &file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes[0]
 }
 
 func (x LocationType) Number() protoreflect.EnumNumber {
@@ -86,7 +86,7 @@ func (x LocationType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use LocationType.Descriptor instead.
 func (LocationType) EnumDescriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{0}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{0}
 }
 
 type AuthType int32
@@ -122,11 +122,11 @@ func (x AuthType) String() string {
 }
 
 func (AuthType) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_publish_artifact_proto_enumTypes[1].Descriptor()
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes[1].Descriptor()
 }
 
 func (AuthType) Type() protoreflect.EnumType {
-	return &file_proto_publish_artifact_proto_enumTypes[1]
+	return &file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes[1]
 }
 
 func (x AuthType) Number() protoreflect.EnumNumber {
@@ -135,7 +135,7 @@ func (x AuthType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use AuthType.Descriptor instead.
 func (AuthType) EnumDescriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{1}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{1}
 }
 
 // Task global unique identifier
@@ -148,7 +148,7 @@ type TaskId struct {
 
 func (x *TaskId) Reset() {
 	*x = TaskId{}
-	mi := &file_proto_publish_artifact_proto_msgTypes[0]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -160,7 +160,7 @@ func (x *TaskId) String() string {
 func (*TaskId) ProtoMessage() {}
 
 func (x *TaskId) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_publish_artifact_proto_msgTypes[0]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -173,7 +173,7 @@ func (x *TaskId) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TaskId.ProtoReflect.Descriptor instead.
 func (*TaskId) Descriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{0}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *TaskId) GetId() string {
@@ -187,14 +187,14 @@ func (x *TaskId) GetId() string {
 type Connector struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Id            string                 `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
-	Auth          AuthType               `protobuf:"varint,2,opt,name=auth,proto3,enum=proto.AuthType" json:"auth,omitempty"`
+	Auth          AuthType               `protobuf:"varint,2,opt,name=auth,proto3,enum=io.harness.product.ci.engine.proto.AuthType" json:"auth,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *Connector) Reset() {
 	*x = Connector{}
-	mi := &file_proto_publish_artifact_proto_msgTypes[1]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -206,7 +206,7 @@ func (x *Connector) String() string {
 func (*Connector) ProtoMessage() {}
 
 func (x *Connector) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_publish_artifact_proto_msgTypes[1]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -219,7 +219,7 @@ func (x *Connector) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Connector.ProtoReflect.Descriptor instead.
 func (*Connector) Descriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{1}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Connector) GetId() string {
@@ -247,7 +247,7 @@ type BuildPublishImage struct {
 
 func (x *BuildPublishImage) Reset() {
 	*x = BuildPublishImage{}
-	mi := &file_proto_publish_artifact_proto_msgTypes[2]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -259,7 +259,7 @@ func (x *BuildPublishImage) String() string {
 func (*BuildPublishImage) ProtoMessage() {}
 
 func (x *BuildPublishImage) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_publish_artifact_proto_msgTypes[2]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -272,7 +272,7 @@ func (x *BuildPublishImage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BuildPublishImage.ProtoReflect.Descriptor instead.
 func (*BuildPublishImage) Descriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{2}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *BuildPublishImage) GetDockerFile() string {
@@ -306,7 +306,7 @@ type UploadFile struct {
 
 func (x *UploadFile) Reset() {
 	*x = UploadFile{}
-	mi := &file_proto_publish_artifact_proto_msgTypes[3]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -318,7 +318,7 @@ func (x *UploadFile) String() string {
 func (*UploadFile) ProtoMessage() {}
 
 func (x *UploadFile) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_publish_artifact_proto_msgTypes[3]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -331,7 +331,7 @@ func (x *UploadFile) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UploadFile.ProtoReflect.Descriptor instead.
 func (*UploadFile) Descriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{3}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *UploadFile) GetFilePattern() string {
@@ -353,7 +353,7 @@ type Destination struct {
 	state          protoimpl.MessageState `protogen:"open.v1"`
 	DestinationUrl string                 `protobuf:"bytes,1,opt,name=destination_url,json=destinationUrl,proto3" json:"destination_url,omitempty"`
 	Connector      *Connector             `protobuf:"bytes,2,opt,name=connector,proto3" json:"connector,omitempty"`
-	LocationType   LocationType           `protobuf:"varint,3,opt,name=location_type,json=locationType,proto3,enum=proto.LocationType" json:"location_type,omitempty"`
+	LocationType   LocationType           `protobuf:"varint,3,opt,name=location_type,json=locationType,proto3,enum=io.harness.product.ci.engine.proto.LocationType" json:"location_type,omitempty"`
 	Region         string                 `protobuf:"bytes,4,opt,name=region,proto3" json:"region,omitempty"` // Valid only for S3 connector
 	unknownFields  protoimpl.UnknownFields
 	sizeCache      protoimpl.SizeCache
@@ -361,7 +361,7 @@ type Destination struct {
 
 func (x *Destination) Reset() {
 	*x = Destination{}
-	mi := &file_proto_publish_artifact_proto_msgTypes[4]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -373,7 +373,7 @@ func (x *Destination) String() string {
 func (*Destination) ProtoMessage() {}
 
 func (x *Destination) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_publish_artifact_proto_msgTypes[4]
+	mi := &file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -386,7 +386,7 @@ func (x *Destination) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Destination.ProtoReflect.Descriptor instead.
 func (*Destination) Descriptor() ([]byte, []int) {
-	return file_proto_publish_artifact_proto_rawDescGZIP(), []int{4}
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *Destination) GetDestinationUrl() string {
@@ -417,29 +417,29 @@ func (x *Destination) GetRegion() string {
 	return ""
 }
 
-var File_proto_publish_artifact_proto protoreflect.FileDescriptor
+var File_io_harness_product_ci_engine_proto_publish_artifact_proto protoreflect.FileDescriptor
 
-const file_proto_publish_artifact_proto_rawDesc = "" +
+const file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDesc = "" +
 	"\n" +
-	"\x1cproto/publish_artifact.proto\x12\x05proto\"\x18\n" +
+	"9io/harness/product/ci/engine/proto/publish_artifact.proto\x12\"io.harness.product.ci.engine.proto\"\x18\n" +
 	"\x06TaskId\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\"@\n" +
+	"\x02id\x18\x01 \x01(\tR\x02id\"]\n" +
 	"\tConnector\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\x12#\n" +
-	"\x04auth\x18\x02 \x01(\x0e2\x0f.proto.AuthTypeR\x04auth\"\x84\x01\n" +
+	"\x02id\x18\x01 \x01(\tR\x02id\x12@\n" +
+	"\x04auth\x18\x02 \x01(\x0e2,.io.harness.product.ci.engine.proto.AuthTypeR\x04auth\"\xa1\x01\n" +
 	"\x11BuildPublishImage\x12\x1f\n" +
 	"\vdocker_file\x18\x01 \x01(\tR\n" +
 	"dockerFile\x12\x18\n" +
-	"\acontext\x18\x02 \x01(\tR\acontext\x124\n" +
-	"\vdestination\x18\x03 \x01(\v2\x12.proto.DestinationR\vdestination\"e\n" +
+	"\acontext\x18\x02 \x01(\tR\acontext\x12Q\n" +
+	"\vdestination\x18\x03 \x01(\v2/.io.harness.product.ci.engine.proto.DestinationR\vdestination\"\x82\x01\n" +
 	"\n" +
 	"UploadFile\x12!\n" +
-	"\ffile_pattern\x18\x01 \x01(\tR\vfilePattern\x124\n" +
-	"\vdestination\x18\x02 \x01(\v2\x12.proto.DestinationR\vdestination\"\xb8\x01\n" +
+	"\ffile_pattern\x18\x01 \x01(\tR\vfilePattern\x12Q\n" +
+	"\vdestination\x18\x02 \x01(\v2/.io.harness.product.ci.engine.proto.DestinationR\vdestination\"\xf2\x01\n" +
 	"\vDestination\x12'\n" +
-	"\x0fdestination_url\x18\x01 \x01(\tR\x0edestinationUrl\x12.\n" +
-	"\tconnector\x18\x02 \x01(\v2\x10.proto.ConnectorR\tconnector\x128\n" +
-	"\rlocation_type\x18\x03 \x01(\x0e2\x13.proto.LocationTypeR\flocationType\x12\x16\n" +
+	"\x0fdestination_url\x18\x01 \x01(\tR\x0edestinationUrl\x12K\n" +
+	"\tconnector\x18\x02 \x01(\v2-.io.harness.product.ci.engine.proto.ConnectorR\tconnector\x12U\n" +
+	"\rlocation_type\x18\x03 \x01(\x0e20.io.harness.product.ci.engine.proto.LocationTypeR\flocationType\x12\x16\n" +
 	"\x06region\x18\x04 \x01(\tR\x06region*X\n" +
 	"\fLocationType\x12\v\n" +
 	"\aUNKNOWN\x10\x00\x12\x06\n" +
@@ -457,34 +457,34 @@ const file_proto_publish_artifact_proto_rawDesc = "" +
 	"ACCESS_KEY\x10\x02B8P\x01Z4github.com/vcalasansh/k8s-engine-commons/proto;protob\x06proto3"
 
 var (
-	file_proto_publish_artifact_proto_rawDescOnce sync.Once
-	file_proto_publish_artifact_proto_rawDescData []byte
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescOnce sync.Once
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescData []byte
 )
 
-func file_proto_publish_artifact_proto_rawDescGZIP() []byte {
-	file_proto_publish_artifact_proto_rawDescOnce.Do(func() {
-		file_proto_publish_artifact_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_publish_artifact_proto_rawDesc), len(file_proto_publish_artifact_proto_rawDesc)))
+func file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescGZIP() []byte {
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescOnce.Do(func() {
+		file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDesc), len(file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDesc)))
 	})
-	return file_proto_publish_artifact_proto_rawDescData
+	return file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDescData
 }
 
-var file_proto_publish_artifact_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_proto_publish_artifact_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
-var file_proto_publish_artifact_proto_goTypes = []any{
-	(LocationType)(0),         // 0: proto.LocationType
-	(AuthType)(0),             // 1: proto.AuthType
-	(*TaskId)(nil),            // 2: proto.TaskId
-	(*Connector)(nil),         // 3: proto.Connector
-	(*BuildPublishImage)(nil), // 4: proto.BuildPublishImage
-	(*UploadFile)(nil),        // 5: proto.UploadFile
-	(*Destination)(nil),       // 6: proto.Destination
+var file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
+var file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
+var file_io_harness_product_ci_engine_proto_publish_artifact_proto_goTypes = []any{
+	(LocationType)(0),         // 0: io.harness.product.ci.engine.proto.LocationType
+	(AuthType)(0),             // 1: io.harness.product.ci.engine.proto.AuthType
+	(*TaskId)(nil),            // 2: io.harness.product.ci.engine.proto.TaskId
+	(*Connector)(nil),         // 3: io.harness.product.ci.engine.proto.Connector
+	(*BuildPublishImage)(nil), // 4: io.harness.product.ci.engine.proto.BuildPublishImage
+	(*UploadFile)(nil),        // 5: io.harness.product.ci.engine.proto.UploadFile
+	(*Destination)(nil),       // 6: io.harness.product.ci.engine.proto.Destination
 }
-var file_proto_publish_artifact_proto_depIdxs = []int32{
-	1, // 0: proto.Connector.auth:type_name -> proto.AuthType
-	6, // 1: proto.BuildPublishImage.destination:type_name -> proto.Destination
-	6, // 2: proto.UploadFile.destination:type_name -> proto.Destination
-	3, // 3: proto.Destination.connector:type_name -> proto.Connector
-	0, // 4: proto.Destination.location_type:type_name -> proto.LocationType
+var file_io_harness_product_ci_engine_proto_publish_artifact_proto_depIdxs = []int32{
+	1, // 0: io.harness.product.ci.engine.proto.Connector.auth:type_name -> io.harness.product.ci.engine.proto.AuthType
+	6, // 1: io.harness.product.ci.engine.proto.BuildPublishImage.destination:type_name -> io.harness.product.ci.engine.proto.Destination
+	6, // 2: io.harness.product.ci.engine.proto.UploadFile.destination:type_name -> io.harness.product.ci.engine.proto.Destination
+	3, // 3: io.harness.product.ci.engine.proto.Destination.connector:type_name -> io.harness.product.ci.engine.proto.Connector
+	0, // 4: io.harness.product.ci.engine.proto.Destination.location_type:type_name -> io.harness.product.ci.engine.proto.LocationType
 	5, // [5:5] is the sub-list for method output_type
 	5, // [5:5] is the sub-list for method input_type
 	5, // [5:5] is the sub-list for extension type_name
@@ -492,27 +492,27 @@ var file_proto_publish_artifact_proto_depIdxs = []int32{
 	0, // [0:5] is the sub-list for field type_name
 }
 
-func init() { file_proto_publish_artifact_proto_init() }
-func file_proto_publish_artifact_proto_init() {
-	if File_proto_publish_artifact_proto != nil {
+func init() { file_io_harness_product_ci_engine_proto_publish_artifact_proto_init() }
+func file_io_harness_product_ci_engine_proto_publish_artifact_proto_init() {
+	if File_io_harness_product_ci_engine_proto_publish_artifact_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_publish_artifact_proto_rawDesc), len(file_proto_publish_artifact_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDesc), len(file_io_harness_product_ci_engine_proto_publish_artifact_proto_rawDesc)),
 			NumEnums:      2,
 			NumMessages:   5,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_proto_publish_artifact_proto_goTypes,
-		DependencyIndexes: file_proto_publish_artifact_proto_depIdxs,
-		EnumInfos:         file_proto_publish_artifact_proto_enumTypes,
-		MessageInfos:      file_proto_publish_artifact_proto_msgTypes,
+		GoTypes:           file_io_harness_product_ci_engine_proto_publish_artifact_proto_goTypes,
+		DependencyIndexes: file_io_harness_product_ci_engine_proto_publish_artifact_proto_depIdxs,
+		EnumInfos:         file_io_harness_product_ci_engine_proto_publish_artifact_proto_enumTypes,
+		MessageInfos:      file_io_harness_product_ci_engine_proto_publish_artifact_proto_msgTypes,
 	}.Build()
-	File_proto_publish_artifact_proto = out.File
-	file_proto_publish_artifact_proto_goTypes = nil
-	file_proto_publish_artifact_proto_depIdxs = nil
+	File_io_harness_product_ci_engine_proto_publish_artifact_proto = out.File
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_goTypes = nil
+	file_io_harness_product_ci_engine_proto_publish_artifact_proto_depIdxs = nil
 }
