@@ -234,6 +234,7 @@ message ExecuteStepRequest {
   string manager_url = 7;
   string delegate_id = 8;
   string marker_file_uuid = 9;
+  bool is_runner = 10;  // Used for sending runner task response instead of delegate's
 }
 
 message ExecuteStepResponse {}

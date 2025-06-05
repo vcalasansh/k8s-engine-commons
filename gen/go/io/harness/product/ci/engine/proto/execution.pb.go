@@ -2116,6 +2116,7 @@ type ExecuteStepRequest struct {
 	ManagerUrl          string                 `protobuf:"bytes,7,opt,name=manager_url,json=managerUrl,proto3" json:"manager_url,omitempty"`
 	DelegateId          string                 `protobuf:"bytes,8,opt,name=delegate_id,json=delegateId,proto3" json:"delegate_id,omitempty"`
 	MarkerFileUuid      string                 `protobuf:"bytes,9,opt,name=marker_file_uuid,json=markerFileUuid,proto3" json:"marker_file_uuid,omitempty"`
+	IsRunner            bool                   `protobuf:"varint,10,opt,name=is_runner,json=isRunner,proto3" json:"is_runner,omitempty"` // Used for sending runner task response instead of delegate's
 	unknownFields       protoimpl.UnknownFields
 	sizeCache           protoimpl.SizeCache
 }
@@ -2211,6 +2212,13 @@ func (x *ExecuteStepRequest) GetMarkerFileUuid() string {
 		return x.MarkerFileUuid
 	}
 	return ""
+}
+
+func (x *ExecuteStepRequest) GetIsRunner() bool {
+	if x != nil {
+		return x.IsRunner
+	}
+	return false
 }
 
 type ExecuteStepResponse struct {
@@ -2500,7 +2508,7 @@ const file_io_harness_product_ci_engine_proto_execution_proto_rawDesc = "" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01\"\r\n" +
 	"\vPingRequest\"\x0e\n" +
-	"\fPingResponse\"\x90\x03\n" +
+	"\fPingResponse\"\xad\x03\n" +
 	"\x12ExecuteStepRequest\x12!\n" +
 	"\fexecution_id\x18\x01 \x01(\tR\vexecutionId\x12@\n" +
 	"\x04step\x18\x02 \x01(\v2,.io.harness.product.ci.engine.proto.UnitStepR\x04step\x12\"\n" +
@@ -2513,7 +2521,9 @@ const file_io_harness_product_ci_engine_proto_execution_proto_rawDesc = "" +
 	"managerUrl\x12\x1f\n" +
 	"\vdelegate_id\x18\b \x01(\tR\n" +
 	"delegateId\x12(\n" +
-	"\x10marker_file_uuid\x18\t \x01(\tR\x0emarkerFileUuid\"\x15\n" +
+	"\x10marker_file_uuid\x18\t \x01(\tR\x0emarkerFileUuid\x12\x1b\n" +
+	"\tis_runner\x18\n" +
+	" \x01(\bR\bisRunner\"\x15\n" +
 	"\x13ExecuteStepResponse\"w\n" +
 	"\x16OutputVariablesWrapper\x12]\n" +
 	"\x10output_variables\x18\x01 \x03(\v22.io.harness.product.ci.engine.proto.OutputVariableR\x0foutputVariables*_\n" +
